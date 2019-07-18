@@ -1,0 +1,24 @@
+{
+    "name": "skcin7/example-package",
+    "description": "My example package setup (aka 'boilerplate') for development of Laravel packages with a workflow to use other Composer dependencies.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nick Morgan",
+            "email": "nick@nicholas-morgan.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ExamplePackage\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ExamplePackage\\ExamplePackageServiceProvider"
+            ]
+        }
+    }
+}
