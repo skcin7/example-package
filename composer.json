@@ -10,14 +10,20 @@
     ],
     "autoload": {
         "psr-4": {
-            "ExamplePackage\\": "src/"
+            "skcin7\\ExamplePackage\\": "src/"
         }
     },
-    "require": {},
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "php-coveralls/php-coveralls": "~0.6"
+    },
     "extra": {
         "laravel": {
             "providers": [
-                "ExamplePackage\\ExamplePackageServiceProvider"
+                "skcin7\\ExamplePackage\\ServiceProvider"
             ]
         }
     }
